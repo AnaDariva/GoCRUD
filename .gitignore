@@ -1,0 +1,12 @@
+# JetBrains
+.idea/
+*.iml
+
+# Go
+bin/
+dist/
+*.exe
+*.log
+
+# Banco local
+app.db
