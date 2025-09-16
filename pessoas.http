@@ -1,0 +1,45 @@
+### Health
+GET http://localhost:8080/health
+
+### Criar Pessoa
+POST http://localhost:8080/pessoas
+Content-Type: application/json
+
+{
+  "nome": "Ana Nalu",
+  "cpf": "12345678908",
+  "telefone": "(44) 99999-0000",
+  "rua": "Av. Brasil",
+  "numero": "123",
+  "complemento": "Ap 12",
+  "bairro": "Centro",
+  "cep": "85870000",
+  "cidade": "Pato Branco",
+  "estado": "PR"
+}
+
+### Listar Pessoas
+GET http://localhost:8080/pessoas
+
+### Buscar Pessoa por ID
+GET http://localhost:8080/pessoas/1
+
+### Atualizar Pessoa
+PUT http://localhost:8080/pessoas/1
+Content-Type: application/json
+
+{
+  "nome": "Ana Luísa",
+  "cpf": "12345678909",
+  "telefone": "(44) 98888-7777",
+  "rua": "Rua das Flores",
+  "numero": "200",
+  "complemento": "",
+  "bairro": "Jardim",
+  "cep": "85871000",
+  "cidade": "Pato Branco",
+  "estado": "PR"
+}
+
+### Remover Pessoa
+DELETE http://localhost:8080/pessoas/1
