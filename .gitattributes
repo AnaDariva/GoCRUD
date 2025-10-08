@@ -1,4 +1,4 @@
-# Não contar frontend/estáticos nas estatísticas
+﻿# Não contar frontend/estáticos nas estatísticas (marcar como vendored)
 public/**            linguist-vendored
 dist/**              linguist-vendored
 build/**             linguist-vendored
@@ -9,8 +9,7 @@ assets/**            linguist-vendored
 *.css                linguist-vendored
 *.html               linguist-vendored
 
-# (Opcional) Contar templates do Go como Go
+# (Opcional) contar templates como Go
 *.gohtml             linguist-language=Go
 *.tmpl               linguist-language=Go
 *.tpl                linguist-language=Go
-
