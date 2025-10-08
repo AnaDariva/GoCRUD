@@ -13,9 +13,3 @@ assets/**            linguist-vendored
 *.gohtml             linguist-language=Go
 *.tmpl               linguist-language=Go
 *.tpl                linguist-language=Go
-
-public/index.html linguist-vendored=false
-
-public/style.css linguist-vendored=false
-
-public/script.js linguist-vendored=false
