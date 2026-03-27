@@ -6,9 +6,9 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/gin-gonic/gin" // Framework web (semelhante a usar bibliotecas HTTP em C, mas muito mais simples)
+	"github.com/gin-gonic/gin" 
 	"gorm.io/driver/sqlite"
-	"gorm.io/gorm" // ORM (mapeia struct Go em tabelas no banco, C seria feito via SQL manual)
+	"gorm.io/gorm" 
 )
 
 // Modelo Pessoa
@@ -49,15 +49,12 @@ func main() {
 	if err := db.AutoMigrate(&Pessoa{}); err != nil {
 		log.Fatal("erro ao migrar:", err)
 	}
-	// Criação do roteador Gin (similar a iniciar um servidor HTTP).
 	r := gin.Default()
 
-	// Endpoint verifica se a API está no ar.
 	r.GET("/health", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{"status": "ok"})
 	})
 
-	// CREATE → Cadastrar nova pessoa
 	r.POST("/pessoas", func(c *gin.Context) {
 		var p Pessoa
 		// Faz o bind automático do JSON para a struct Pessoa
