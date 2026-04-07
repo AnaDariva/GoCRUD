@@ -1,5 +1,5 @@
 # 📝 CRUD em Go + Apresentação  
-**Sistema de cadastro de pessoas em Go (Golang) com interface web e slides explicativos sobre a linguagem.**  
+**Sistema de cadastro de pessoas em  (Golang) com interface web e slides explicativos sobre a linguagem.**  
 
 ---
 
